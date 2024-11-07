@@ -10,7 +10,7 @@
 
     }
 
-    const updateProfile =(obj:Profile,update:Partial<Profile>)=>{
+    const updateProfile =(obj:Profile,update:Partial<Profile>):Profile =>{
         return {
             ...obj,...update
         }
