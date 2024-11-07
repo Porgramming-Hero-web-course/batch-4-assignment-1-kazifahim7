@@ -5,7 +5,7 @@
 
     const countWordOccurrences=(sentence:string,word:string):number=>{
         let count : number =0;
-        const splitSentence: string[] = sentence.toLowerCase().replace(/[^\w\s]/g, '').split(' ')
+        const splitSentence: string[] = sentence.toLowerCase().split(' ')
         const FinalWord :string = word.toLowerCase()
 
         splitSentence.forEach((text :string)=>{
@@ -19,7 +19,7 @@
 
     // test 
 
-    const sentenceText: string = "TypeScript is great. I love TypeScript!";
+    const sentenceText: string = "I love typescript"
     const word : string = "typescript"
 
     console.log(countWordOccurrences(sentenceText,word))

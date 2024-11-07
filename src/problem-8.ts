@@ -5,13 +5,13 @@
     
 
 
-    const validateKeys=<T extends object>(obj: T, keys: (keyof T)[]) : boolean =>{
+    const validateKeys=<T extends Record<string,unknown> >(obj: T, keys: (keyof T)[]) : boolean =>{
         for(let key of keys){
             if(!(key in obj)){
                 return false
             }
         }
-     return true
+       return true
     }
 
 
